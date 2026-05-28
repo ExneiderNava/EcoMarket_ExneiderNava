@@ -5,6 +5,7 @@
     --contraste: #e5ba73;
     --tarjetas: #f3f4f6;
     --texto2: #4b5563;
+    --imagenSostenible: url('../img/background/fondo-sostenible.jpg')
 }
 
 body {
@@ -18,14 +19,20 @@ body {
 
 header {
     width: 100%;
-    background-color: var(--fondos);
+    background-image: var(--imagenSostenible);
     border-bottom: 1px solid var(--contraste);
 }
 
+hr {
+    border: none;
+    border-top: 4px solid var(--naturaleza);
+    margin: 20px 0;
+}
+
 .encabezado {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1vh;
+    max-width: 1500px;
+    margin: 0;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -33,11 +40,12 @@ header {
 .icono-footer {
     height: 8vh;
     width: auto;
+    margin-left: 3vw;
 }
 
 nav {
     margin-left: auto;
-    margin-right: 1vh;
+    margin-right: 3vw;
 }
 
 nav ul {
@@ -49,7 +57,7 @@ nav ul {
 }
 
 nav ul li {
-    color: var(--texto2);
+    color: white;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
@@ -63,7 +71,7 @@ nav ul li:hover {
 .hero {
     width: 100%;
     min-height: 80vh;
-    background-image: url('/img/background/fondo-sostenible.jpg');
+    background-image: var(--imagenSostenible);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,4 +79,61 @@ nav ul li:hover {
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
+}
+
+.presentacion {
+    max-width: 600px;
+    margin-left: 1%;
+    color: white;
+}
+
+.container-productos {
+    padding: 2% 6%;
+}
+
+.container-productos h1 {
+    text-align: center;
+    font: bold;
+}
+
+.container-productos p {
+    text-align: center;
+    font: bold;
+}
+
+.zona-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+}
+
+
+.contenedor-productos {
+    background-color: var(--contraste);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.container-productos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.boton-producto {
+    background-color: brown;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
