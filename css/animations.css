@@ -1,0 +1,25 @@
+@keyframes temblor {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-3px, 0);
+    }
+
+    40% {
+        transform: translate(3px, 0);
+    }
+
+    60% {
+        transform: translate(-3px, 0);
+    }
+
+    80% {
+        transform: translate(3px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

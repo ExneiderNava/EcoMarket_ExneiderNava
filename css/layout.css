@@ -1,0 +1,155 @@
+header {
+    width: 100%;
+    background-image: var(--imagenSostenible);
+    border-bottom: 1px solid var(--contraste);
+}
+
+.encabezado {
+    max-width: 1500px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+nav ul {
+    display: flex;
+    gap: 5vh;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 80vh;
+    background-image: var(--imagenSostenible);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.hero-tienda {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/store.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.hero-nosotros {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/nosotros.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.hero-contacto {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/contacto.webp');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.hero-carrito {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/carrito.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container-productos {
+    padding: 2% 6%;
+}
+
+.zona-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.contenido-informativo {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    align-items: center;
+    gap: 5px;
+    padding: 2% 5%;
+    margin: 1% 6%;
+    background: linear-gradient(to right, var(--acentos), var(--naturaleza));
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 25% 0 25%;
+}
+
+footer {
+    background-image: var(--imagenSostenible);
+    color: white;
+    padding: 2% 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+.footer-menu {
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
+.final {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.firma {
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
+.filtros-categoria {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
