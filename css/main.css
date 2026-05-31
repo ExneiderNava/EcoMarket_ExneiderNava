@@ -15,6 +15,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--texto2);
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    width: 100%;
 }
 
 header {
@@ -56,7 +64,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
+nav ul li a {
     color: white;
     font-size: 0.95rem;
     font-weight: 600;
@@ -64,7 +72,7 @@ nav ul li {
     transition: color 0.3s ease;
 }
 
-nav ul li:hover {
+nav ul li:hover a {
     color: var(--acentos);
 }
 
@@ -72,6 +80,19 @@ nav ul li:hover {
     width: 100%;
     min-height: 80vh;
     background-image: var(--imagenSostenible);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.hero-tienda {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/store.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,7 +125,8 @@ nav ul li:hover {
 .zona-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
+    gap: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -117,6 +139,7 @@ nav ul li:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    margin: 10px 0;
     transition: all 0.5s ease;
 }
 
@@ -130,6 +153,10 @@ nav ul li:hover {
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .boton-producto {
@@ -216,6 +243,17 @@ footer {
 
 .footer-menu ul {
     list-style: none;
+}
+
+.footer-menu ul a {
+    list-style: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-menu ul a:hover {
+    list-style: none;
+    color: var(--acentos);
 }
 
 .final {
