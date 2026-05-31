@@ -24,7 +24,6 @@ Al restringir el uso de scripts, este proyecto explota al máximo las capacidade
 ## 📂 Estructura del Proyecto
 El código se organiza de forma modular y obligatoria bajo la siguiente arquitectura de archivos para garantizar su escalabilidad:
 
-```text
 EcoMarket/
 ├── css/
 │   ├── main.css            # Resets globales, variables de color y tipografía base
