@@ -56,10 +56,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="imagen">
-                    <img src="../img/background/llamada.webp" alt="imagen lateral">
-                </div>
+                <section class="formulario-contacto">
+                    <h2>Envíanos un mensaje</h2>
+                    <form action="formulario.html" method="POST">
+                        <div class="grupo-campo">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="boton-producto">Enviar Mensaje</button>
+                    </form>
+                </section>
             </div>
+        </section>
+
+        <section class="mapa">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3799.9486251890653!2d-72.52680714097787!3d7.917487439760452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sav%203%20%234-50%20motilones!5e0!3m2!1ses!2sco!4v1780245660532!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </section>
     </main>
     <footer>

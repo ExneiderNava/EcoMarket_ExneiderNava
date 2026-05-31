@@ -145,3 +145,114 @@ nav ul li:hover a {
 #categoria-vasos:target~.zona-productos .contenedor-productos:not(.vasos) {
     display: none;
 }
+
+.formulario-contacto {
+    background-color: var(--naturaleza);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: left;
+}
+
+.formulario-contacto h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: var(--acentos);
+    background-color: #ffffff;
+}
+
+.formulario-contacto .boton-producto {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mapa iframe:hover {
+    transform: scale(1.01);
+}
+
+@media (max-width: 1024px) {
+    .presentacion {
+        max-width: 85%;
+    }
+
+    .imagen img {
+        height: 50vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-carrito .boton-producto {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    .presentacion {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-productos:hover,
+    .btn-filtro:hover,
+    .iconos img:hover,
+    .imagen img:hover {
+        transform: none;
+    }
+
+    .container-productos img {
+        height: 250px;
+    }
+
+    .imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .icono-footer {
+        height: 6vh;
+        margin-left: 0;
+    }
+}
