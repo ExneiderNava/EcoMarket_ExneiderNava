@@ -24,7 +24,6 @@ Al restringir el uso de scripts, este proyecto explota al máximo las capacidade
 ## 📂 Estructura del Proyecto
 El código se organiza de forma modular y obligatoria bajo la siguiente arquitectura de archivos para garantizar su escalabilidad:
 
-```text
 EcoMarket/
 ├── css/
 │   ├── main.css            # Resets globales, variables de color y tipografía base
@@ -60,4 +59,12 @@ El navegador se abrirá de forma automática en la dirección local (normalmente
 
 🌍 Demostración en Línea: Puedes interactuar con la versión desplegada en producción a través del siguiente enlace (Disponible temporalmente para revisión evaluativa):
 
-👉 yellow-swallow-582580.hostingersite.com 
+👉 yellow-swallow-582580.hostingersite.com
+
+Capturas de pantalla del sitio
+<img width="1904" height="937" alt="image" src="https://github.com/user-attachments/assets/c55f3e3e-ffc6-4d84-b973-470c02606030" />
+<img width="1873" height="972" alt="image" src="https://github.com/user-attachments/assets/07af5495-25df-407a-ad11-8c794f1c5461" />
+<img width="1881" height="951" alt="image" src="https://github.com/user-attachments/assets/0a5a949d-1dbd-4949-bd7b-ce2fa6412ad1" />
+<img width="1842" height="889" alt="image" src="https://github.com/user-attachments/assets/ff17943d-ee9e-4d96-bf67-ebf6706bbb92" />
+
+
