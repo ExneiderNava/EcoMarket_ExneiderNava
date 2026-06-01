@@ -24,6 +24,7 @@ Al restringir el uso de scripts, este proyecto explota al máximo las capacidade
 ## 📂 Estructura del Proyecto
 El código se organiza de forma modular y obligatoria bajo la siguiente arquitectura de archivos para garantizar su escalabilidad:
 
+```bash
 EcoMarket/
 ├── css/
 │   ├── main.css            # Resets globales, variables de color y tipografía base
@@ -40,6 +41,7 @@ EcoMarket/
 │   └── contacto.html       # Formulario inteligente con validaciones nativas
 ├── index.html              # Página de Inicio (Home)
 └── README.md               # Documentación del sistema
+```
 
 📦 Instrucciones de Despliegue Local
 Sigue estos pasos para visualizar y probar el proyecto en tu entorno local:
