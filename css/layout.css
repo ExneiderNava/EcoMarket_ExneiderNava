@@ -90,6 +90,19 @@ nav ul {
     box-sizing: border-box;
 }
 
+.hero-calculadora {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../img/background/calculadora.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
 .container-productos {
     padding: 2% 6%;
 }
@@ -107,6 +120,18 @@ nav ul {
     align-items: center;
     gap: 20px;
     padding: 2% 5%;
+    margin: 1% 6%;
+    background: linear-gradient(to right, var(--acentos), var(--naturaleza));
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.contenido-calculadora {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 5% 20%;
     margin: 1% 6%;
     background: linear-gradient(to right, var(--acentos), var(--naturaleza));
     color: white;
@@ -159,6 +184,31 @@ footer {
     display: block;
 }
 
+.seccion-formulario {
+    border: dashed;
+    text-align: center;
+}
+
+.seccion-formulario legend {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 5px solid blue;
+    border-radius: 20px;
+}
+
+.opciones-transporte {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10vh 0vw 10vh 0vw;
+}
+
+.acciones-formulario {
+    text-align: center;
+    margin: 10vh 0vw 10vh 0vw;
+}
+
+
+
 @media (max-width: 1024px) {
     .zona-productos {
         grid-template-columns: repeat(2, 1fr);
@@ -166,6 +216,11 @@ footer {
 
     .iconos {
         padding: 0 5%;
+    }
+
+    .contenido-calculadora {
+        padding: 40px 5%;
+        margin: 1% 4%;
     }
 }
 
@@ -251,5 +306,25 @@ footer {
 
     .mapa {
         margin: 8% 6%;
+    }
+
+    .contenido-calculadora {
+        padding: 30px 15px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .opciones-transporte {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .acciones-formulario {
+        margin: 20px 0;
+    }
+
+    .seccion-formulario legend {
+        font-size: 24px;
     }
 }

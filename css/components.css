@@ -207,6 +207,26 @@ nav ul li:hover a {
     transform: scale(1.01);
 }
 
+.acciones-formulario button {
+    background-color: blue;
+    color: white;
+    padding: 2vh 2vw;
+    border-radius: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 0.3 ease;
+}
+
+.acciones-formulario span {
+    display: inline-block;
+    animation: girar 2s linear infinite;
+}
+
+.acciones-formulario button:hover {
+    transform: scale(1.01);
+    animation: temblor 0.3s ease-in-out infinite;
+}
+
 @media (max-width: 1024px) {
     .presentacion {
         max-width: 85%;
@@ -254,5 +274,21 @@ nav ul li:hover a {
     .icono-footer {
         height: 6vh;
         margin-left: 0;
+    }
+
+    .formulario-contacto {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .acciones-formulario button {
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .grupo-campo input[type="range"] {
+        width: 100%;
     }
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="icon" type="image/png" href="../img/hero/el-planeta-tierra.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="icono-footer" src="../img/hero/el-planeta-tierra.png" alt="icono-del-sitio">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Principal</a></li>
+                    <li><a href="productos.html">Tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-calculadora">
+            <div class="presentacion">
+            </div>
+        </section>
+        <section class="informacion-sitio">
+            <h1>Calcula tu Huella de Carbono</h1>
+            <hr>
+            <div class="contenido-calculadora">
+                <section class="formulario-contacto">
+                    <form action="calculadora-exito.html">
+                        <fieldset class="seccion-formulario">
+                            <legend>Hogar</legend>
+
+                            <div class="grupo-campo">
+                                <div class="encabezado-campo">
+                                    <label for="consumo-energia">Consumo de Energía Mensual</label>
+                                    <span class="valor-dinamico">
+                                        <output for="consumo-energia" id="valor-energia">350</output> kwh
+                                    </span>
+                                </div>
+                                <input type="range" id="consumo-energia" name="consumo_energia" min="0" max="1000"
+                                    value="350" oninput="document.getElementById('valor-energia').value = this.value">
+                            </div>
+                        </fieldset>
+                        <fieldset class="seccion-formulario">
+                            <legend>Transporte</legend>
+
+                            <p class="pregunta-seccion">¿Cuál es tu medio de transporte principal?</p>
+
+                            <div class="opciones-transporte">
+                                <label class="tarjeta-opcion">
+                                    <input type="radio" name="medio_transporte" value="auto_privado" checked>
+                                    <div class="contenido-opcion">
+                                        <span>Auto Privado</span>
+                                    </div>
+                                </label>
+
+                                <label class="tarjeta-opcion">
+                                    <input type="radio" name="medio_transporte" value="transporte_publico">
+                                    <div class="contenido-opcion">
+                                        <span>Transporte Público</span>
+                                    </div>
+                                </label>
+
+                                <label class="tarjeta-opcion">
+                                    <input type="radio" name="medio_transporte" value="bicicleta_pie">
+                                    <div class="contenido-opcion">
+                                        <span>Bicicleta / A pie</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="grupo-campo">
+                                <label>Kilómetros recorridos mensualmente</label>
+                                <div class="entrada-unidad">
+                                    <input type="number" id="kilometros" name="kilometros_mensuales"
+                                        placeholder="Ingrese km">
+                                    <span class="unidad">KM / MES</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="acciones-formulario">
+                            <button type="submit" class="boton-calcular">Calcular Impacto <span>⟳</span></button>
+                            <p class="texto-legal">
+                                Al hacer clic, aceptas nuestra política de privacidad y el procesamiento de tus datos
+                                ambientales.
+                            </p>
+                        </div>
+                    </form>
+
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contexto">
+                <h1>EcoMarket</h1>
+                <p>Tu destino para un consumo consciente y responsable. Nos dedicamos a ofrecerte productos
+                    seleccionados que cuidan de ti y del planeta, promoviendo un estilo de vida residuo cero y apoyando
+                    a productores locales que respetan el medio ambiente.
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h1>Páginas de interes</h1>
+                <ul>
+                    <li><a href="../index.html">Principal</a></li>
+                    <li><a href="productos.html">Tienda</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="final">
+            <p>@2026 EcoMarket</p>
+            <p class="firma"><strong>Creado por: Exneider Nava</strong></p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
